@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Question</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Digital Clock -->
+<section>
+  <h2>Digital Clock</h2>
+  <div id="clock"></div>
+</section>
+
+<!-- Word Counter -->
+<section>
+  <h2>Word Counter</h2>
+  <textarea id="inputText" placeholder="Type your text here..."></textarea>
+  <div class="counter">
+    Words: <span id="wordCount">0</span> | Characters: <span id="charCount">0</span>
+  </div>
+</section>
+
+<!-- Password Strength Checker -->
+<section>
+  <h2>Password Strength Checker</h2>
+  <input type="password" id="password" maxlength="10" minlength="8" placeholder="Enter password" />
+  <div>Password length → Min 8 char and Max 10 char</div>
+  <div class="strength-meter">
+    <div class="strength-bar" id="strengthBar"></div>
+  </div>
+  <div id="strengthText" style="margin-top: 5px;">Strength: </div>
+</section>
+
+<!-- Contact Us Form -->
+<section>
+  <h2>Contact Us Form</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Name"/>
+    <span class="error" id="nameError"></span>
+
+    <input type="email" id="email" placeholder="Email"/>
+    <span class="error" id="emailError"></span>
+
+    <input type="text" id="subject" placeholder="Subject"/>
+    <span class="error" id="subjectError"></span>
+
+    <textarea id="message" placeholder="Message"></textarea>
+    <span class="error" id="messageError"></span>
+
+    <button type="submit">Submit</button>
+    <div class="success" id="successMessage"></div>
+  </form>
+</section>
+
+<!-- Live Weather App -->
+<section>
+  <h2>Live Weather App</h2>
+  <input type="text" id="cityInput" placeholder="Enter city..." />
+  <button id="getWeather">Get Weather</button>
+  <div class="weather-info" id="weatherInfo"></div>
+  <div class="error" id="errorMessage"></div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
